@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Running Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="icon" href="./run-image.png" type="images/x-icon">
+</head>
+<body>
+    <div class="logo">
+        <img src="./run-image.png" alt="running-image">
+    </div>
+    <form >
+        <label for="entry">Number of miles today</label>
+        <br/>
+        <input type="number" id="entry" step="0.1"/>
+        <br/>
+        <button type="submit">Add</button>
+    </form>
+    <hr>
+
+    <section class="entriesWrapper">
+        <h3>Last 7 days</h3>
+        <ul id="entries">
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+        </ul>
+    </section>
+    <section class="data">
+        <div>
+            <p>Total:</p>
+            <span id="total">0</span>
+        </div>
+        <div>
+            <p>Average Distance:</p>
+            <span id="average">0</span>
+        </div>
+        <div>
+            <p>This weeks Highest:</p>
+            <span id="high">0</span>
+        </div>
+    </section>
+    <section class="progress">
+        <h3>Weekly target: <span id="progressTotal">0</span> 
+            / <span id="target">25</span> miles
+        </h3>
+        <div class="progressCircleWrapper">
+            <!---TODO-->
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
