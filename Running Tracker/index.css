@@ -52,10 +52,10 @@ button{
 }
 
 button:hover{
-    background: #7371c3;
-    border: 2px solid gray;
+    /* background: #59b8c8; */
+    border: 2px solid white;
     scale: 1.05;
-    color: rgb(230, 225, 225);
+    /* color: rgb(230, 225, 225);   */
 }
 
 ul{
