@@ -11,7 +11,7 @@ const entriesWrapper = document.querySelector("#entries");
 function addNewEntry(newEntry){
     entriesWrapper.removeChild(entriesWrapper.firstElementChild);
     const listItems = document.createElement('li');
-    const listValue = document.createTextNode(newEntry);
+    const listValue = document.createTextNode(newEntry.toFixed(1));
     listItems.appendChild(listValue);
     entriesWrapper.appendChild(listItems);
 }
@@ -35,11 +35,11 @@ function updateNewEntry(newEntry){
             highest = entries[j];
         }
     }
-
-    document.getElementById("total").innerHTML =  sum; 
-    document.getElementById("average").innerHTML = avg.toFixed(2);
-    document.getElementById("high").innerHTML = highest.toFixed(2);
+    document.getElementById("total").innerHTML =  sum.toFixed(1); 
+    document.getElementById("average").innerHTML = avg.toFixed(1);
+    document.getElementById("high").innerHTML = highest.toFixed(1);
 }
+
 
 function handleSubmit(event){
     event.preventDefault()

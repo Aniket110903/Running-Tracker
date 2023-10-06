@@ -13,6 +13,7 @@ body{
 
 .logo{
     width: 50%;
+    height: 40%;
     background: #405d76;
     margin: 1rem auto;
     text-align: center;
@@ -86,7 +87,7 @@ li{
 }
 
 img{
-    width: 95%;
+    width: 65%;
 }
 .data div{
     background: #141c22;
@@ -105,3 +106,4 @@ section{
     width: 70%;
     margin: 1rem auto;
 }
+
